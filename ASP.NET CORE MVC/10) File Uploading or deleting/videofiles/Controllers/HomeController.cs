@@ -56,7 +56,7 @@ namespace videofiles.Controllers
                     Directory.CreateDirectory(path);
                 }
         
-                List<string> uploadedFiles = new List<string>();
+                // List<string> uploadedFiles = new List<string>();
                 foreach (IFormFile postedFile in postedFiles)
                 {
                     string fileName = Path.GetFileName(postedFile.FileName);
@@ -67,7 +67,7 @@ namespace videofiles.Controllers
                         using (FileStream stream = new FileStream(Path.Combine(path, fileName), FileMode.Create))
                         {
                             postedFile.CopyTo(stream);
-                            uploadedFiles.Add(fileName);
+                            // uploadedFiles.Add(fileName);
                             video v = new video();
                             v.Filename=fileName;
                             v.Filepath="~/Uploads/"+fileName;

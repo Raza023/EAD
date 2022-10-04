@@ -11,8 +11,8 @@ u.Age = 21;
 u.Email = "hr770735@gmail.com";
 u.IsActive = true;
 
-// db.Users.Add(u);
-// db.SaveChanges();
+db.Users.Add(u);
+db.SaveChanges();
 
 
 Product p = new Product();
@@ -23,6 +23,10 @@ p.IsActive = true;
 
 db.Products.Add(p);
 
+db.SaveChanges();
+
+var p = db.Products.First(p => p.ProductName.Contains("s"));
+p.ProductName = "Lenovo";
 db.SaveChanges();
 
 // var user = db.Users.FirstOrDefault();

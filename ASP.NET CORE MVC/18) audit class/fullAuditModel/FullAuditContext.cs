@@ -39,7 +39,7 @@ namespace fullAuditModel
             {
                 if (entry.Entity.ToString() == "fullAuditModel.User")
                 {
-                    System.Console.WriteLine($"{entry.Entity} has state {entry.State}");
+                    //System.Console.WriteLine($"{entry.Entity} has state {entry.State}");
                     var referenceEntity = entry.Entity as User;
                     switch (entry.State)
                     {
@@ -58,7 +58,7 @@ namespace fullAuditModel
                 }
                 else if (entry.Entity.ToString() == "fullAuditModel.Product")
                 {
-                    System.Console.WriteLine($"{entry.Entity} has state {entry.State}");
+                    // System.Console.WriteLine($"{entry.Entity} has state {entry.State}");
                     var referenceEntity = entry.Entity as Product;
                     switch (entry.State)
                     {

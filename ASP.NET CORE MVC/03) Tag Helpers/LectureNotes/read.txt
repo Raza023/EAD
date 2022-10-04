@@ -9,9 +9,8 @@ in> Views/_ViewImports.cshtml
 -------------------Taghelpers we used----------------------------
 //asp-for
 //asp-controller
-//asp-action      
+//asp-action
 //asp-route-id
-
 
 step 2)
 //asp-for="Name" in all forms

@@ -16,8 +16,6 @@ Make changes in DB.   (delete column)
 dotnet ef dbcontext scaffold "Server=localhost\SQLEXPRESS;Database=ShoppingDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;" Microsoft.EntityFrameworkCore.SqlServer -o Models -f
 
 
-
-
 ---------------Visual Stdio--------------
 
 Scaffold-DbContext "Server=localhost\SQLEXPRESS;Database=ShoppingDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;" Microsoft.EntityFrameworkCore.SqlServer -Outputdir Models 

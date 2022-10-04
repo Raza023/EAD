@@ -15,18 +15,18 @@ step 1) Install nugett packages:
 5) dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.10
 6) dotnet add package Microsoft.EntityFrameworkCore.SqlServer.Design
 
-dotnet ef migrations add InitialCreate         //will create migration folder.
+dotnet ef migrations add InitialCreate         //will create migration folder.(change migration name each time)
 dotnet ef database update                      //will update db.
 
 -----------------code changes----------------
 comment out Program.cs
-New class Products.cs add properties to it
+New class Product.cs add properties to it
 New Class ShoppingContext.cs inherited from DBContext 
     using Microsoft.EntityFrameworkCore;     //add this for DBContext
 
     public DbSet<Product> Products { get; set; }
-
     // The following configures EF to create a SqlServer database file in the special "local" folder for your platform.
+    
     protected override void OnConfiguring(DbContextOptionsBuilder options)
         => options.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=ShoppingDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;");
     //don't forget to change Database=NewDBName;
@@ -44,7 +44,7 @@ package: Microsoft.EntityFrameworkCore.Design
 
 -----------------code changes----------------
 comment out Program.cs
-New class Products.cs add properties to it
+New class Product.cs add properties to it
 New Class ShoppingContext.cs inherited from DBContext 
     using Microsoft.EntityFrameworkCore;     //add this for DBContext
 

@@ -4,3 +4,4 @@ CREATE TABLE videos (
     [vpath] VARCHAR (100) NOT NULL,
     PRIMARY KEY (vid)
 );
+

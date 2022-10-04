@@ -114,7 +114,7 @@ namespace RepositoryPattern
                 });
     }
 }
---------------------for Visual Studio-------------------------
+--------------------for Visual Studio .NET 6-------------------------
 In Program.cs
 Replace code with
 

@@ -9,7 +9,7 @@ follow step 4 and 5 here
 
 step 3)
 Right click on docker icon in your taskbar -> switch to window container
-remove -> error(run given cmd on power shell (run as administrator)).
+remove -> error(run given command on power shell (run as administrator)).
 
 step 4)
 Your PC will be restarted now.

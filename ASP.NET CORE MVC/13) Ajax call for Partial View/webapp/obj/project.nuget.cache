@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pe+af+x51h5fq34+X0jUVJnGN025YOQbasVcrzfpHMAB9mhZkdb6XEBcgjZPk+1NHITxGOIdUqAcW2nXDGfAhg==",
+  "dgSpecHash": "y31ZjwNrzIuEG45QkcVnTH2xXsTfuhiiqqke8yNE3whU9OqDgongKjPt76oCQ6tY5UHGlawuWEDH4GAgau5HBg==",
   "success": true,
-  "projectFilePath": "D:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\13) Ajax\\webapp\\webapp.csproj",
+  "projectFilePath": "D:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\13) Ajax call for Partial View\\webapp\\webapp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
