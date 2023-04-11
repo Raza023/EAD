@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace prac
 {
-    delegate void MyEvent(object sender,MyeventArgs e);
+    delegate void EventDele(object sender,MyeventArgs e);
 
     class MyeventArgs: EventArgs
     {
@@ -11,9 +11,9 @@ namespace prac
         public object Value { get; set; }
     }
 
-    class MyArrayList: ArrayList
+    class MyArrayList: ArrayList          //publisher class
     {
-        public event MyEvent Added=null;
+        public event EventDele delVar=null;
         MyeventArgs e = new MyeventArgs();
         public MyArrayList()
         {
@@ -21,18 +21,24 @@ namespace prac
             e.Value = "";
         }
 
-        public void onAdded(object value)
+        // public void onAdded(object value)
+        // {
+        //     if(delVar!=null)
+        //     {
+        //         e.Count += 1;
+        //         e.Value = value;
+        //         delVar.Invoke(this,e);
+        //     }
+        // }
+        public override int Add(object value)
         {
-            if(Added!=null)
+            // onAdded(value);
+            if(delVar!=null)
             {
                 e.Count += 1;
                 e.Value = value;
-                Added.Invoke(this,e);
+                delVar.Invoke(this,e);
             }
-        }
-        public override int Add(object value)
-        {
-            onAdded(value);
             return base.Add(value);
         }
     }
@@ -42,7 +48,10 @@ namespace prac
         static void Main(string[] args)
         {
             MyArrayList l = new MyArrayList();
-            l.Added += delegate (object sender,MyeventArgs e) { Console.WriteLine($"Object added by {sender.ToString()} and {e.ToString()} and count: {e.Count} and Value: {e.Value}"); };
+            l.delVar += delegate (object sender,MyeventArgs e)   //subscribing
+            {
+                Console.WriteLine($"Object added by {sender.ToString()} and {e.ToString()} and count: {e.Count} and Value: {e.Value}"); 
+            };
             l.Add(1);
             l.Add("2");
         }

@@ -4,26 +4,30 @@ namespace hello_world
 {
 	public class Student
 	{
-        private string name;
-        public string Rollno { get; set; }
-        private int age;
-        
+        private string name;        //propfull
         public string Name
         {
             get { return name; }
             set { name = value; }
         }
-        
+
+        public string Rollno { get; set; }  //prop
+
+        private int age;
         public int Age
         {
             get { return age; }
             set
             {
-				age = value;
-                if(age<0)
+                if(value<0)
                 {
-                    age=0;
+                    value = 0;
                 }
+				age = value;
+                // if(age<0)
+                // {
+                //     age=0;
+                // }
             }
         }
 	}

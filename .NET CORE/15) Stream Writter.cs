@@ -3,11 +3,8 @@ using System.IO;
 
 namespace hello_world
 {
-    
     class Program
     {
-		
-
         static void Main(string[] args)
         {
             FileStream fout = null;
@@ -30,7 +27,6 @@ namespace hello_world
                 sw.Close();
                 fout.Close();
             }
-
         }
     }
 }

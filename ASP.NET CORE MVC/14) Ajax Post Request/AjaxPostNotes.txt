@@ -50,7 +50,7 @@ create post ajax call:
                 // this generates the data in query string format. 
                 // this needs the default contentType 
                 // (default content type is: contentType: 'application/x-www-form-urlencoded; charset=UTF-8') 
-                // so it is optional, you can remove it
+                // as it is optional, you can remove it
                 success: function (response) {
                     console.log("Succefully got data.");
                     console.log(response);

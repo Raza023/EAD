@@ -7,9 +7,14 @@ namespace hello_world
     {
         static void Main(string[] args)
         {
+            short ac = 1;          //1 byte
+            System.Console.WriteLine(ac);
+            byte ab = 1;           //2 bytes
+            System.Console.WriteLine(ab);
             int x=1;               //4bytes     //32-bit signed integer type
-            float y=2.3F;          //4bytes     //32-bit single-precision floating point type
             long b = 2L;           //8bytes
+
+            float y=2.3F;          //4bytes     //32-bit single-precision floating point type
             double z=3.45;         //8bytes     //64-bit double-precision floating point type    3.45D bhi chala ga
             decimal a=3.2M;        //16bytes    //128-bit precise decimal values with 28-29 significant digits
 			
@@ -17,9 +22,9 @@ namespace hello_world
             string d = "qwertyuiop";              //2 bytes each char
 			
 			int e=-1;
-            bool  isGreat = Convert.ToBoolean(e);               //1 byte     
+            bool  isGreat = Convert.ToBoolean(e);               //1 bit     
 			
-			object n =12;
+			object n = 12;
             Console.WriteLine(n);
             Console.WriteLine(n.ToString().Length);
 			

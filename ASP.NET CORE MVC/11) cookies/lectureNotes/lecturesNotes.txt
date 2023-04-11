@@ -21,8 +21,8 @@ public IActionResult Index()
 
         //updating cookie
         HttpContext.Response.Cookies.Delete("firstRequest");
-        CookieOptions option = new CookieOptions();          //for it add using Microsoft.AspNetCore.Http;
-        option.Expires = System.DateTime.Now.AddDays(10);     //Now cookie will expire after a day. if you want cookies to be saved after closing browser as well.
+        CookieOptions option = new CookieOptions();          //for it add "using Microsoft.AspNetCore.Http";
+        option.Expires = System.DateTime.Now.AddDays(10);     //Now cookie will expire after 10 days. if you want cookies to be saved after closing browser as well.
         HttpContext.Response.Cookies.Append("firstRequest", System.DateTime.Now.ToString(),option);
     }
     else

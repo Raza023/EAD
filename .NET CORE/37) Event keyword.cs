@@ -2,14 +2,14 @@ using System;
 
 
 //sirf publisher ma invoke karna
-//sirf  =+ sa add ho ga event ka sath (otherwise sara khatam ho sakta hain dosri classes ma)
+//sirf  += sa add ho ga event ka sath (otherwise sara khatam ho sakta hain dosri classes ma)
 
 namespace prac
 {
-    delegate void hnadler(string s);
+    delegate void handler(string s);
     class myPublisher
     {
-        public event hnadler msgevent=null;   //define
+        public event handler msgevent=null;   //define
         public void publishMessage(string msg)  //raise
         {
             msgevent.Invoke(msg);

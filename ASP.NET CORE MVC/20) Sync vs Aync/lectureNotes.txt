@@ -12,5 +12,3 @@ File Handling, DB access, requesting data from a network.
 
 CPU bounds:
 Performing an expensive calclations.
-
-

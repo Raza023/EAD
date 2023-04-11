@@ -5,7 +5,7 @@ namespace hello_world
 {
     class Program
     {
-        static int sum(params int[]data)
+        static int sum(params int[]data)     //data must be of the int type.
         {
             int s=0;
             foreach (var item in data)

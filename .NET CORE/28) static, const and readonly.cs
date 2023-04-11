@@ -76,7 +76,7 @@ namespace practice
             Console.WriteLine(p.Age);
             Console.WriteLine(p.hiarColor);
             Console.WriteLine(Person.city);
-            Console.WriteLine(Person.COUNTRY + "\n")
+            Console.WriteLine(Person.COUNTRY + "\n");
 			
             Console.WriteLine(p2.Name);
             Console.WriteLine(p2.Age);

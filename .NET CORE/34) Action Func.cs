@@ -4,10 +4,10 @@ using System.IO;
 namespace hello_world
 {
     
-    //Action     (for all void return type function also allow parameters upto 16.)
+    //Action     (for all void return type function, also allow parameters upto 16.)
     //delegate void MyDelegate();
     
-	//Func     (for all other return types function also allow parameters upto 16.)
+	//Func     (for all other return types function, also allow parameters upto 16.)
     //delegate double MathOP(double s,double x);
 
     class Program

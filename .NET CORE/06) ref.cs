@@ -4,6 +4,8 @@ namespace hello_world
 {
     class Program
     {
+        //ref variable must be initialized before caller function and callee gets the same value(refernce) and we can change it. (two way)(callee <-> caller)
+        
 		static void func1(int a)
         {
             a=20;

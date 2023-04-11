@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\01) Introduction\\webapp\\webapp.csproj": {}
+    "E:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\01) Introduction\\webapp\\webapp.csproj": {}
   },
   "projects": {
-    "D:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\01) Introduction\\webapp\\webapp.csproj": {
+    "E:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\01) Introduction\\webapp\\webapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\01) Introduction\\webapp\\webapp.csproj",
+        "projectUniqueName": "E:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\01) Introduction\\webapp\\webapp.csproj",
         "projectName": "webapp",
-        "projectPath": "D:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\01) Introduction\\webapp\\webapp.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\01) Introduction\\webapp\\obj\\",
+        "projectPath": "E:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\01) Introduction\\webapp\\webapp.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "E:\\6th semester\\Enterprise Application Development\\EAD\\ASP.NET CORE MVC\\01) Introduction\\webapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +45,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -57,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

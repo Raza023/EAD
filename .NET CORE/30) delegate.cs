@@ -12,7 +12,7 @@ namespace hello_world
     {
         static void Display()
         {
-            Console.WriteLine("This is first text");
+            Console.WriteLine("This is first text.");
         }
 
         static void InputError()
@@ -98,13 +98,12 @@ namespace hello_world
             if(i==0)
             {
                 del = Display;
-                del();
             }
             else
             {
                 del = InputError;
-                del();
             }
+            del();
 
             d2 d = Display2;
             d("This is 2nd text");
@@ -121,3 +120,9 @@ namespace hello_world
         }
     }
 }
+
+
+//delegate int dName(int a, int b);
+//dName dRef = funcName;
+//int data = dRef(1,2);
+

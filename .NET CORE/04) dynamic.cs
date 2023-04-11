@@ -12,8 +12,8 @@ namespace hello_world
         {
             //dynamic datatype.
             //it's an explicit datatype.
-            //not necessary to be intialized always at the time of creation.
-            //can be modified after-wards.
+            //not necessary to be initialized always at the time of creation.
+            //can be modified afterwards.
             //run time
             dynamic x;
             x ="some string";

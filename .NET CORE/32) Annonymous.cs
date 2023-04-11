@@ -46,7 +46,7 @@ namespace hello_world
                 return a-b;
             };
 
-            Console.WriteLine("Difference is: "+op(3,2));
+            Console.WriteLine("Difference is: "+op(3,2));  //it will call both but returns value of last one.
         }
     }
 }

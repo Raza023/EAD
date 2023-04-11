@@ -23,9 +23,6 @@ using Microsoft.Data.SqlClient;
         //     conn.close();
         // }
 
-
-        
-
 namespace hello_world
 {
     class Program
